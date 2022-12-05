@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" />
+<StackPane prefHeight="183.0" prefWidth="275.0" style="-fx-background-image: url('https://media.istockphoto.com/id/1191658515/photo/neon-background-abstract-blue-and-pink-with-light-shapes-line-diagonals.jpg?b=1&amp;s=170667a&amp;w=0&amp;k=20&amp;c=dmT59kRCask04UiZuCNp_GQyI5Ph6XtkcRIdE015b8Q=');  -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cletter.CLetterController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Separator opacity="0.0" prefHeight="0.0" prefWidth="8.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <TextField promptText="Current date" fx:id="currentDate"/>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <TextField promptText="Company name" fx:id="companyName"/>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <TextField promptText="Company focus" fx:id="companyFocus"/>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <ChoiceBox fx:id="quality1" prefHeight="11" prefWidth="125.0" value="Quality 1">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="creative" />
+                           <String fx:value="flexible" />
+                           <String fx:value="curious" />
+                           <String fx:value="interested in cybersecurity" />
+                           <String fx:value="highly motivated" />
+                           <String fx:value="skilled communicators" />
+                           <String fx:value="skilled with data structures" />
+                           <String fx:value="open to learning new skills" />
+                           <String fx:value="driven to make a difference in the world" />
+                           <String fx:value="creative problem solvers" />
+                           <String fx:value="skilled in organization" />
+                        </FXCollections>
+                     </items>
+                  </ChoiceBox>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <ChoiceBox fx:id="quality2" prefHeight="11" prefWidth="125.0" value="Quality 2">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="creative" />
+                           <String fx:value="flexible" />
+                           <String fx:value="curious" />
+                           <String fx:value="interested in cybersecurity" />
+                           <String fx:value="highly motivated" />
+                           <String fx:value="skilled communicators" />
+                           <String fx:value="skilled with data structures" />
+                           <String fx:value="open to learning new skills" />
+                           <String fx:value="driven to make a difference in the world" />
+                           <String fx:value="creative problem solvers" />
+                           <String fx:value="skilled in organization" />
+                        </FXCollections>
+                     </items>
+                  </ChoiceBox>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <RadioButton fx:id="smallGroup" text="Small group work?" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="4.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </VBox>
+            <Separator layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="0.0" prefWidth="5.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="4.0" prefWidth="9.0" />
+                  <Button onAction="#onGenerateButtonClick" text="Generate" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
